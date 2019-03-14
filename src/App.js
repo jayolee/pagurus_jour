@@ -41,7 +41,7 @@ class App extends Component {
     for (let i = 0; i < explalist.length; i++) {
       topelement.push(
         <div key={"expla" + i} className="topinfo">
-          <span className={"title " + this.props.idnum} >{explalist[i]}: </span>{this.contents[item].exlpla[explalist[i]]}<br />
+          <span className={"title  pagurus"} >{explalist[i]}: </span>{this.contents[item].exlpla[explalist[i]]}<br />
         </div>
       )
     }
@@ -54,8 +54,8 @@ class App extends Component {
       }
       contentelement.push(
         <div key={"sectitle" + i}>
-          <div className={"sectitle " + this.props.idnum} >{contentlist[i]}
-            <div className={"bar " + this.props.idnum} />
+          <div className={"sectitle  pagurus"} >{contentlist[i]}
+            <div className={"bar  pagurus"} />
           </div>
 
           {this.contents[item][contentlist[i]]}
@@ -66,9 +66,9 @@ class App extends Component {
     let finalkey = contentlist.length - 1;
     contentelement.push(
       <div key={"sectitle" + finalkey} onMouseOut={this.gotoTopNone.bind(this)} onMouseOver={this.gotoTopBounce.bind(this)} >
-        <div className={"sectitle " + this.props.idnum} >
+        <div className={"sectitle pagurus"} >
           {contentlist[finalkey]}
-          <div className={"bar " + this.props.idnum} />
+          <div className={"bar  pagurus"} />
         </div>
         {this.contents[item][contentlist[finalkey]]}
       </div>
@@ -77,13 +77,13 @@ class App extends Component {
     if (this.contents[item].button) {
       element.push(<div className="contentbox" key="contentbox" style={{ opacity: this.state.opacity, transform: this.state.transform }}>
         <div className="contentBottom" onMouseOut={this.gotoTopNone.bind(this)} onMouseOver={this.gotoTopBounce.bind(this)}></div>
-        <div className={"enttitle " + this.props.idnum} >{this.contents[item].projectTitle}
+        <div className={"enttitle  pagurus"} >{this.contents[item].projectTitle}
 
         </div>
-        <div className={"maincontent " + this.props.idnum}>
+        <div className={"maincontent  pagurus"}>
           {this.contents[item].topimg}
           <div className="toptitle ">
-            <div className={"qtmark " + this.props.idnum} > <q></q> </div>
+            <div className={"qtmark  pagurus"} > <q></q> </div>
             {this.contents[item].quote}
 
           </div>
@@ -105,12 +105,12 @@ class App extends Component {
       element.push(<div className="contentbox" key="contentbox" style={{ opacity: this.state.opacity, transform: this.state.transform }}>
         <div className="contentBottom" onMouseOut={this.gotoTopNone.bind(this)} onMouseOver={this.gotoTopBounce.bind(this)}></div>
 
-        <div className={"enttitle " + this.props.idnum} >{this.contents[item].projectTitle}
+        <div className={"enttitle  pagurus"} >{this.contents[item].projectTitle}
         </div>
         <div className="maincontent">
           {this.contents[item].topimg}
           <div className="toptitle ">
-            <div className={"qtmark " + this.props.idnum} > <q></q> </div>
+            <div className={"qtmark  pagurus"} > <q></q> </div>
             {this.contents[item].quote}
           </div>
           <div className="expla">
@@ -135,13 +135,13 @@ class App extends Component {
       <div style={{ position: "relative", top: "0", left: "0", width: "100%", height: "100%" }}>
         {this.contentgenerator()}
         <div>
-          <div className={"gototop " + this.props.idnum} id={this.state.anilist[this.state.anistat]} key="topBtn" style={{ opacity: this.state.opacity }} onClick={(ev) => window.scroll({ top: 0, left: 0, behavior: 'smooth' })} >
+          <div className={"gototop  pagurus"} id={this.state.anilist[this.state.anistat]} key="topBtn" style={{ opacity: this.state.opacity }} onClick={(ev) => window.scroll({ top: 0, left: 0, behavior: 'smooth' })} >
             <svg width="30" height="30">
               <path d="M4 15 L15 4 L26 15 M15 4 L15 26" />
             </svg>
-            <div className={"gototop_descrip " + this.props.idnum}>Go to Top
+            <div className={"gototop_descrip  pagurus"}>Go to Top
           </div>
-            <div className={"triangle " + this.props.idnum} />
+            <div className={"triangle  pagurus"} />
           </div>
         </div>
       </div>

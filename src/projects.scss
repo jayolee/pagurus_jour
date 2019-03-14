@@ -1,5 +1,6 @@
 /* Scss Document */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|News+Cycle:700');
+@import url("https://use.typekit.net/kui4ifx.css");
 
 /*Color list*/
 $dote: #f98e75;
@@ -10,6 +11,7 @@ $momo : #ff594d;
 $naoshima: #e5b354;
 $getcuisine: #617D31;
 $up: #E9974C;
+$pagurus:#ff614c;
 
 @font-face {
 	font-family:"lucida grande";
@@ -95,6 +97,9 @@ $up: #E9974C;
 		&.up{
 			color:$up;
 		}
+		&.pagurus{
+			color: $pagurus;
+		}
 }
 @mixin bgcolors{
 	&.dote{
@@ -123,6 +128,9 @@ $up: #E9974C;
 		}
 		&.fa{
 			background: #325F8D;
+		}
+		&.pagurus{
+			background: $pagurus;
 		}
 }
 #player {
@@ -328,6 +336,9 @@ $up: #E9974C;
 			&.up{
 					border:1px solid $up;	
 			}
+			&.pagurus{
+				border: 1px solid $pagurus;
+			}
 			@media screen and (max-width: 700px){
 				display:none;
 			}
@@ -389,10 +400,36 @@ $up: #E9974C;
 }
 
 .expla {
-
+	.quoterow{
+		width:100%;
+		max-width: 750px;
+		margin:0 auto 30px;
+		display:flex;
+		align-items: flex-start;
+	}
 	p{
 		@include sizes(95%,null,750px);
 		margin:0 auto;
+		&.quoteInt{
+			display:inline-block;
+			width: 300px;
+			padding: 10px 16px;
+			background:rgba(255, 97, 76, .2);
+			border-radius: 10px;
+			margin:0 10px;
+
+		}
+		&.mainT{
+			margin: {
+				bottom: 10px;
+				top: 90px;
+			}
+			color: rgba(0,0,0,0.9);
+			font: {
+				weight: bold;
+				size:24px;
+			}
+		}
 		&.mainPoint{
 			text-align:center;
 			font : {
@@ -738,6 +775,9 @@ a.member{
 	}
 	&.up{
 		border-bottom: 2px dashed $up;
+	}
+	&.pagurus{
+		border-bottom: 2px dashed $pagurus;
 	}
 }
 .sectitle {
@@ -1247,5 +1287,29 @@ $imgshadow: 0 0 14px rgba(0,0,0,0.2);
 		display:none;
 	}
 }
-
+.appwrap{
+	width: 100%;
+	max-width: 412px;
+	margin: 0 auto;
+	height: 100vh;
+	max-height: 812px;
+	position: relative;
+	text-align: left;
+	font-family:  "trade-gothic-next", "sans-serif";
+	.title{
+		margin: 0;
+	}
+	img{
+		width: auto;
+		display:inline-block;
+		margin:0;
+		max-width: none;
+		position:relative;
+	}
+	.onboard{
+		img{
+			width:400%;
+		}
+	}
+}
 
