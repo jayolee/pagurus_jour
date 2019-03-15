@@ -5,6 +5,9 @@ import card2 from './images/card2.svg'
 import clrlogo from './images/logo_color.svg'
 import screenmap from './images/screenmap.png'
 import lofi from './images/lofi.png'
+import persona1 from './images/persona1.jpg'
+import persona2 from './images/persona2.jpg'
+import persona3 from './images/persona3.jpg'
 import App from './prototype/App.js'
 
 function zoomimg(e) {
@@ -34,19 +37,16 @@ export const projectList = {
         "button": <a href="https://jayolee.github.io/pagurus/" target="_blank" rel="noopener noreferrer">
             <div className="button pagurus">Play with the Prototype</div></a>,
         "Process": <div className="processBoxWrap">
-            <div className="proBoxLine up" />
+            <div className="proBoxLine pagurus" />
             <div className="proBoxOut">
-                <div className="processBox up">Ideate</div>
-            </div>
-            <div className="proBoxOut">
-                <div className="processBox up">Research</div>
+                <div className="processBox pagurus">Research</div>
                 <div className="processExpla">Semi-structured Interview</div>
                 <div className="processExpla">Affinity Diagraming</div>
                 <div className="processExpla">Card Sorting</div>
                 <div className="processExpla">Literature Review</div>
             </div>
             <div className="proBoxOut">
-                <div className="processBox up">Iterate</div>
+                <div className="processBox pagurus">Iterate</div>
                 <div className="processExpla">Lo-fi Prototype</div>
                 <div className="processExpla">Think-aloud</div>
                 <div className="processExpla">Hi-fi Prototype</div>
@@ -118,9 +118,11 @@ export const projectList = {
                 Although further research is required, from the current level of research, it is more difficult to match a life mentor for people who move to the USA for work. It is because people value work experience less than school experience as the common ground, and it is more difficult to figure out the group that can be a prospective life mentor unless there's a method to collect the history of groups users were in.</p>
             <p>
                 Also, I learned that students value recent experience more than older ones. Also, people more fluent in English value same school experience more than nationality. Based on this, I decided to use school and preferred language as the data to find prospective mentors.</p>
-            <p>
-                user personas
-            </p>
+            <div className="halfwrap">
+                <img src={persona1} className="tri" />
+                <img src={persona2} className="tri"/>
+                <img src= {persona3} className="tri"/>
+            </div>
             <p>students who are older tend to have more concerns than those of younger students.<br />
                 Students from different countries have different types of concerns.</p>
 
@@ -142,7 +144,7 @@ In conclusion, it can be expected that once this app has the first mentor-mentee
             <p>
                 According to the literature review, reciprocity is one of the key values to keep getting new mentors which will attract new mentees. Therefore, I focused on how a user can be both a mentor and a mentee seamlessly.</p>
             <p>
-                To create this seamless interaction, I used autocomplete functions as a key feature. 'Paragus' has many screens where users need to fill out the data. By autocompleting the forms with the data can be expected, it can save the user's time. Also, the feedback the user would provide, which would be fixing the autocompleted value, will provide the data to find a pattern which can lead to better expectations.</p>
+                To create this seamless interaction, I used autocomplete functions as a key feature. 'Pagurus' has many screens where users need to fill out the data. By autocompleting the forms with the data can be expected, it can save the user's time. Also, the feedback the user would provide, which would be fixing the autocompleted value, will provide the data to find a pattern which can lead to better expectations.</p>
             <p className = "mainT">2. Using the words in perspectives that can convey the context.</p>
             <p>
             Different types of forms can be confusing because they collect similar types of data. Also, to improve the app from the feedback I got from Think-Alouds, I used words as a tool to relieve the confusion. Therefore, most of the sentences on the app are written in first-perspective.</p>
@@ -165,6 +167,12 @@ In conclusion, it can be expected that once this app has the first mentor-mentee
             <p>Although I used some autocompletes for forms, there are still tons of forms a user need to fill out to get a meaningful recommendation. Therefore, if there's a source of information that can obtain users' school histories such as signing in using social network services, it would be able to decrease more workload. 
 Also, by using other activity histories of users, which can convey users' personal preferences, it would be possible to have a better mentor recommendation system.
 </p>
+<p className= "solutionPoint" style={{marginBottom:"10px", marginTop:"180px"}}>Thank you for reading!<br />Go to my portfolio and check out more projects.</p>
+<div className = "center" >
+<a href="https://jayolee.github.io/portfolio" style={{marginTop: "10px"}} target="_blank" rel="noopener noreferrer">
+            <div className="button pagurus">Go to Young's Portfolio</div></a>
+            </div>
+
         </div>,
     },
 

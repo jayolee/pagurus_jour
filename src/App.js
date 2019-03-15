@@ -49,9 +49,7 @@ class App extends Component {
 
 
     for (let i = 4; i < contentlist.length - 1; i++) {
-      if (this.contents[item].button && i === 4) {
-        i += 1;
-      }
+      
       contentelement.push(
         <div key={"sectitle" + i}>
           <div className={"sectitle  pagurus"} >{contentlist[i]}
@@ -74,8 +72,7 @@ class App extends Component {
       </div>
     )
 
-    if (this.contents[item].button) {
-      element.push(<div className="contentbox" key="contentbox" style={{ opacity: this.state.opacity, transform: this.state.transform }}>
+      element.push(<div className="contentbox" key="contentbox" style={{ opacity: this.state.opacity }}>
         <div className="contentBottom" onMouseOut={this.gotoTopNone.bind(this)} onMouseOver={this.gotoTopBounce.bind(this)}></div>
         <div className={"enttitle  pagurus"} >{this.contents[item].projectTitle}
 
@@ -100,31 +97,8 @@ class App extends Component {
 
       </div>
       )
-    }
-    else {
-      element.push(<div className="contentbox" key="contentbox" style={{ opacity: this.state.opacity, transform: this.state.transform }}>
-        <div className="contentBottom" onMouseOut={this.gotoTopNone.bind(this)} onMouseOver={this.gotoTopBounce.bind(this)}></div>
+    
 
-        <div className={"enttitle  pagurus"} >{this.contents[item].projectTitle}
-        </div>
-        <div className="maincontent">
-          {this.contents[item].topimg}
-          <div className="toptitle ">
-            <div className={"qtmark  pagurus"} > <q></q> </div>
-            {this.contents[item].quote}
-          </div>
-          <div className="expla">
-            {topelement}
-          </div>
-          <div className="expla">
-            {contentelement}
-          </div>
-
-        </div>
-
-      </div>
-      )
-    }
     return element
   }
 
@@ -132,7 +106,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ position: "relative", top: "0", left: "0", width: "100%", height: "100%" }}>
+      <div style={{ position: "relative", width: "100%", height: "100%" }}>
         {this.contentgenerator()}
         <div>
           <div className={"gototop  pagurus"} id={this.state.anilist[this.state.anistat]} key="topBtn" style={{ opacity: this.state.opacity }} onClick={(ev) => window.scroll({ top: 0, left: 0, behavior: 'smooth' })} >
