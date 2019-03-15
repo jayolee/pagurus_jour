@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "25bda2992cc8467b1e3b1cb20810bb47",
-    "url": "/pagurus_jour/static/media/card2.25bda299.svg"
+    "revision": "12f7868af86a6e25a17cd91e2d245f7a",
+    "url": "/pagurus_jour/static/media/screenmap.12f7868a.png"
   },
   {
-    "revision": "a95418e4ea8714e62bb9",
-    "url": "/pagurus_jour/static/css/main.908b76f8.chunk.css"
+    "revision": "23f2f526d58c818146b5",
+    "url": "/pagurus_jour/static/css/main.b21445cf.chunk.css"
   },
   {
     "revision": "d3e2f800d7983bbc143a",
     "url": "/pagurus_jour/static/js/runtime~main.df279106.js"
   },
   {
-    "revision": "911d267bf526da7bbe10",
-    "url": "/pagurus_jour/static/js/2.9814a80d.chunk.js"
+    "revision": "94e3da519397f8d8af95",
+    "url": "/pagurus_jour/static/js/2.8b0f993c.chunk.js"
   },
   {
     "revision": "612ce1bbe2a30db63dc8a5c8f13d7973",
@@ -40,16 +40,28 @@ self.__precacheManifest = [
     "url": "/pagurus_jour/static/media/card1.cc8a43b2.svg"
   },
   {
-    "revision": "a95418e4ea8714e62bb9",
-    "url": "/pagurus_jour/static/js/main.cf5394e9.chunk.js"
+    "revision": "25bda2992cc8467b1e3b1cb20810bb47",
+    "url": "/pagurus_jour/static/media/card2.25bda299.svg"
   },
   {
-    "revision": "12f7868af86a6e25a17cd91e2d245f7a",
-    "url": "/pagurus_jour/static/media/screenmap.12f7868a.png"
+    "revision": "23f2f526d58c818146b5",
+    "url": "/pagurus_jour/static/js/main.e8468b6e.chunk.js"
   },
   {
     "revision": "c0106d2c992c4697550c7ec40d1fc4e9",
     "url": "/pagurus_jour/static/media/lofi.c0106d2c.png"
+  },
+  {
+    "revision": "8139dfa5d9019f6e4108cc870586fbab",
+    "url": "/pagurus_jour/static/media/persona1.8139dfa5.jpg"
+  },
+  {
+    "revision": "b8a186abed0e69ede16d8a2d4f08be65",
+    "url": "/pagurus_jour/static/media/persona2.b8a186ab.jpg"
+  },
+  {
+    "revision": "17e1caea7ca2ba620bd59e080051fcfc",
+    "url": "/pagurus_jour/static/media/persona3.17e1caea.jpg"
   },
   {
     "revision": "6fbbdf47646eeaffcf23e0bf8a343b6c",
@@ -76,7 +88,7 @@ self.__precacheManifest = [
     "url": "/pagurus_jour/static/media/mentor.b0c46272.svg"
   },
   {
-    "revision": "3ddb9bb724fd8935a77fc24e1dd743e9",
+    "revision": "1aeed9f4d503f01ee4589a45f9feceaa",
     "url": "/pagurus_jour/index.html"
   }
 ];
